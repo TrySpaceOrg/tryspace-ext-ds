@@ -7,6 +7,7 @@ set(APP_SRC_FILES
   fsw/src/ds_file.c
   fsw/src/ds_dispatch.c
 )
+include_directories(${APPLICATION_PLATFORM_INC_LIST})
 
 # Create the app module
 add_cfe_app(ds ${APP_SRC_FILES})
